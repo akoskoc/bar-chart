@@ -100,7 +100,7 @@ class ChartComponent extends React.Component {
                         d3.select(d3.event.currentTarget).attr("fill", "#179659")
                         tooltip
                             .style("display", null)
-                            .style("left", (d3.mouse(d3.event.currentTarget)[0] + 120) + "px")
+                            .style("left", (d3.mouse(d3.event.currentTarget)[0] + 200) + "px")
                             .style("top",  (d3.mouse(d3.event.currentTarget)[1] - 10)  + "px")
                             .html( "<span class='money'>$" + d[1] + " Billion" + " </span> <br /> <span class='date'>"  + new Date(d[0]).getFullYear() + " " + months[new Date(d[0]).getMonth()] + "</span>")
 

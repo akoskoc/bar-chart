@@ -3,17 +3,15 @@ import ReactDOM from 'react-dom';
 import registerServiceWorker from './registerServiceWorker';
 import './styles/main.css';
 import { Provider } from "react-redux"
+import { createStore } from "redux"
 
 /* Reducer */
 import reducer from "./reducers/reducer"
 
-/* Store */
-import { createStore } from "redux"
-
 /* Components */
 import ChartComponent from "./components/chart"
 
-
+/* Store */
 const store = createStore(reducer)
 
 
